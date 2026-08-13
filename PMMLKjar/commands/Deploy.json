@@ -1,0 +1,8 @@
+{
+    "container-id" : "PMML-JAR-2.0",
+    "release-id" : {
+        "group-id" : "org.kie",
+        "artifact-id" : "pmmljar",
+        "version" : "2.0"
+    }
+}

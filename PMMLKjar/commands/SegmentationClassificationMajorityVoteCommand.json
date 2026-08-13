@@ -1,0 +1,35 @@
+{
+  "commands": [ {
+      "apply-pmml-model-command": {
+        "outIdentifier": null,
+        "packageName": null,
+        "hasMining": false,
+        "requestData": {
+          "correlationId": "123",
+          "modelName": "SegmentationClassificationMajorityVote",
+          "source": "SegmentationClassificationMajorityVote.pmml",
+          "requestParams": [
+            {
+              "correlationId": "123",
+              "name": "input1",
+              "type": "java.lang.Double",
+              "value": -15.5
+            },
+            {
+              "correlationId": "123",
+              "name": "input2",
+              "type": "java.lang.Double",
+              "value": -51.0
+            },
+            {
+              "correlationId": "123",
+              "name": "input3",
+              "type": "java.lang.Double",
+              "value": 12.0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

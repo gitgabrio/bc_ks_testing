@@ -1,0 +1,8 @@
+{
+    "container-id" : "DMN-JAR-1.0",
+    "release-id" : {
+        "group-id" : "org.kie",
+        "artifact-id" : "dmnjar",
+        "version" : "1.0"
+    }
+}

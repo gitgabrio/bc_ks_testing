@@ -1,0 +1,71 @@
+{
+  "commands": [ {
+      "apply-pmml-model-command": {
+        "outIdentifier": null,
+        "packageName": null,
+        "hasMining": false,
+        "requestData": {
+          "correlationId": "123",
+          "modelName": "MixedMining",
+          "source": "MiningModelMixed.pmml",
+          "requestParams": [
+            {
+              "correlationId": "123",
+              "name": "categoricalX",
+              "type": "java.lang.String",
+              "value": "red"
+            },
+            {
+              "correlationId": "123",
+              "name": "categoricalY",
+              "type": "java.lang.String",
+              "value": "classA"
+            },
+            {
+              "correlationId": "123",
+              "name": "age",
+              "type": "java.lang.Double",
+              "value": 25.0
+            },
+            {
+              "correlationId": "123",
+              "name": "occupation",
+              "type": "java.lang.String",
+              "value": "ASTRONAUT"
+            },
+            {
+              "correlationId": "123",
+              "name": "residenceState",
+              "type": "java.lang.String",
+              "value": "AP"
+            },
+            {
+              "correlationId": "123",
+              "name": "validLicense",
+              "type": "java.lang.Boolean",
+              "value": true
+            },
+            {
+              "correlationId": "123",
+              "name": "input1",
+              "type": "java.lang.Double",
+              "value": 23.0
+            },
+            {
+              "correlationId": "123",
+              "name": "input2",
+              "type": "java.lang.Double",
+              "value": 3.5
+            },
+            {
+              "correlationId": "123",
+              "name": "input3",
+              "type": "java.lang.Double",
+              "value": 15.7
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

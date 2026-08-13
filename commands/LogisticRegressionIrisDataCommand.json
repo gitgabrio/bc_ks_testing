@@ -1,0 +1,41 @@
+{
+  "commands": [ {
+      "apply-pmml-model-command": {
+        "outIdentifier": null,
+        "packageName": null,
+        "hasMining": false,
+        "requestData": {
+          "correlationId": "123",
+          "modelName": "LogisticRegressionIrisData",
+          "source": "LogisticRegressionIrisData.pmml",
+          "requestParams": [
+            {
+              "correlationId": "123",
+              "name": "Sepal.Length",
+              "type": "java.lang.Double",
+              "value": 6.9
+            },
+            {
+              "correlationId": "123",
+              "name": "Sepal.Width",
+              "type": "java.lang.Double",
+              "value": 3.1
+            },
+            {
+              "correlationId": "123",
+              "name": "Petal.Length",
+              "type": "java.lang.Double",
+              "value": 5.1
+            },
+            {
+              "correlationId": "123",
+              "name": "Petal.Width",
+              "type": "java.lang.Double",
+              "value": 2.3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

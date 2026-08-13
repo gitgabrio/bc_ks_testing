@@ -1,0 +1,29 @@
+{
+  "commands": [ {
+      "apply-pmml-model-command": {
+        "outIdentifier": null,
+        "packageName": null,
+        "hasMining": false,
+        "requestData": {
+          "correlationId": "123",
+          "modelName": "SimpleScorecardCategorical",
+          "source": "SimpleScorecardCategorical.pmml",
+          "requestParams": [
+            {
+              "correlationId": "123",
+              "name": "input1",
+              "type": "java.lang.String",
+              "value": "classA"
+            },
+            {
+              "correlationId": "123",
+              "name": "input2",
+              "type": "java.lang.String",
+              "value": "classB"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

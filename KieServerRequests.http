@@ -1,0 +1,39 @@
+###
+
+# curl -X PUT -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json'  -u 'wbadmin:wbadmin' --data @commands/Deploy.json  'http://localhost:8080/kie-server/services/rest/server/containers/DMN-JAR-1.0'
+PUT http://localhost:8080/kie-server/services/rest/server/containers/DMN-JAR-1.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/Deploy.json
+
+###
+
+# curl -X DELETE -H 'X-KIE-ContentType: JSON'  -u 'wbadmin:wbadmin' 'http://localhost:8080/kie-server/services/rest/server/containers/DMN-JAR-1.0'
+DELETE http://localhost:8080/kie-server/services/rest/server/containers/DMN-JAR-1.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+
+###
+
+# curl -X GET -H 'X-KIE-ContentType: JSON'  -u 'wbadmin:wbadmin' 'http://localhost:8080/kie-server/services/rest/server/containers'
+GET http://localhost:8080/kie-server/services/rest/server/containers
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/SimpleScorecardCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/DMN-JAR-1.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/DMN-JAR-1.0/dmn
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+Accept: application/json
+
+< commands/SimpleCommand.json
+
+###
+
+
+

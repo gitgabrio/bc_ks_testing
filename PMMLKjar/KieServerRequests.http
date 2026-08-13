@@ -1,0 +1,109 @@
+###
+
+# curl -X PUT -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json'  -u 'wbadmin:wbadmin' --data @commands/Deploy.json  'http://localhost:8080/kie-server/services/rest/server/containers/PMML-JAR-2.0'
+PUT http://localhost:8080/kie-server/services/rest/server/containers/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/Deploy.json
+
+###
+
+# curl -X DELETE -H 'X-KIE-ContentType: JSON'  -u 'wbadmin:wbadmin' 'http://localhost:8080/kie-server/services/rest/server/containers/PMML-JAR-2.0'
+DELETE http://localhost:8080/kie-server/services/rest/server/containers/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+
+###
+
+# curl -X GET -H 'X-KIE-ContentType: JSON'  -u 'wbadmin:wbadmin' 'http://localhost:8080/kie-server/services/rest/server/containers'
+GET http://localhost:8080/kie-server/services/rest/server/containers
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/SimpleScorecardCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/SimpleScorecardCommand.json
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/CategoricalVariablesRegressionCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/CategoricalVariablesRegressionCommand.json
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/CompoundNestedPredicateScorecardCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/CompoundNestedPredicateScorecardCommand.json
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/LogisticRegressionIrisDataCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/LogisticRegressionIrisDataCommand.json
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/MiningModelMixedCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/MiningModelMixedCommand.json
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/MiningModelPredicatesCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/MiningModelPredicatesCommand.json
+
+###
+
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/SampleMineTreeCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/SampleMineTreeCommand.json
+
+###
+
+# curl -X POST -H 'X-KIE-ContentType: JSON' -H 'Content-type: application/json' -u 'wbadmin:wbadmin' --data @commands/SegmentationClassificationMajorityVoteCommand.json 'http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0'
+POST http://localhost:8080/kie-server/services/rest/server/containers/instances/PMML-JAR-2.0
+Authorization: Basic kie-server kie-server
+X-KIE-ContentType: JSON
+Content-Type: application/json
+
+< commands/SegmentationClassificationMajorityVoteCommand.json
+
+###
+
+
+

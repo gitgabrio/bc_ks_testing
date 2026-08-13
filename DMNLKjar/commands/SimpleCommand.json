@@ -1,0 +1,10 @@
+{
+  "model-namespace" : null,
+  "model-name" : null,
+  "decision-name" : [ ],
+  "decision-id" : [ ],
+  "decision-service-name" : null,
+  "dmn-context" : {
+    "name" : "John"
+  }
+}
