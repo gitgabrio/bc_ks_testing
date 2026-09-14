@@ -12,11 +12,12 @@
   <properties>
     <generateModel>NO</generateModel>
     <generateDMNModel>NO</generateDMNModel>
-    <maven.compiler.target>11</maven.compiler.target>
-    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <version.org.drools>7.67.2.Final-redhat-00054</version.org.drools>
+    <!--<version.org.drools>7.67.2.Final-redhat-00054</version.org.drools>-->
+    <version.org.drools>7.81.1-SNAPSHOT</version.org.drools>
   </properties>
 
   <dependencies>
@@ -82,7 +83,7 @@
     <dependency>
       <groupId>org.kie.server</groupId>
       <artifactId>kie-server-client</artifactId>
-      <version>7.67.2.Final-redhat-00054</version>
+      <version>${version.org.drools}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

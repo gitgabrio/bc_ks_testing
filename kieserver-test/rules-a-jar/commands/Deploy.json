@@ -1,0 +1,8 @@
+{
+    "container-id" : "RULES-JAR-1.0",
+    "release-id" : {
+        "group-id" : "org.kie",
+        "artifact-id" : "rules-a-jar",
+        "version" : "1.0"
+    }
+}
